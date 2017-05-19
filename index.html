@@ -1,10 +1,30 @@
 <html>
-<title>XimaZhan
+<title>你来看我啊，要抱抱，要举高高
 </title>
 <head>
+  <meta charset="UTF-8"></meta>
+  <script>
+    var video;
+    function init()
+    {
+      video=document.getElementById("video1");
+      video.addEventListener("end",function()
+                             {
+        alert("播放结束");
+      };true);
+    }
+    function pause()
+    {
+      video.pause();
+    }
+  </script>
 </head>
-<body>
+<body onLoad="init()">
 大家好，我叫占东红，这是我今天第一次来到github，这是我的个人博客，<span>敬请关注！</span>
+  <video id="video1" src=""></video>
+  </br>
+<button onClick="play()">播放</button>
+<button onClick="play()">暂停</button>
 </body>
 
 </html>
