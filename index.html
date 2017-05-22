@@ -7,7 +7,51 @@
      <link rel="stylesheet" href="bootstrap.min.css">
 </head>
 <body class="table-responsive">
-   
+   <nav class="navbar navbar-default navbar-fixed-top"><!--nav nav-tabs nav-justified   navbar-default-->
+    <div class="container">
+        <div class="navbar-header">
+       <a href="#" class="navbar-brand">logo</a>
+            </div>
+
+
+    <ul class="nav navbar-nav">
+        <li class="active"><a href="#">首页</a></li>
+        <li><a href="http://www.baidu.com">资讯</a></li>
+        <li><a href="#">产品</a></li>
+        <li><a href="#">关于</a></li>
+
+    </ul>
+        <form class="navbar-form navbar-right">
+            <div class="input-group">
+            <input style="width:300px;float:right" ype="text" class="form-control">
+            <div class="input-group-btn">
+            <button class="btn btn-default">提交</button>
+            </div>
+            </div>
+        </form>
+        <p class="navbar-text navbar-right">&nbsp <a class="navbar-link" href="#">登录&nbsp;</a><a class="navbar-link" href="#">注册</a></p>
+   </div>
+</nav>
+    <ul style="margin:50px 0" class="nav nav-pills nav-justified">
+    <li class="active"><a href="#">首页</a></li>
+    <li><a href="#">资讯</a></li>
+    <li><a href="#">产品</a></li>
+    <li>
+        <a  href="#" data-toggle="dropdown">
+            下拉菜单
+            <span class="caret"></span>
+        </a>
+        <ul class="dropdown-menu">
+            <li><a href="#">苹果</a></li>
+            <li><a href="#">香蕉</a></li>
+            <li><a href="#">菠萝</a></li>
+            <li><a href="#">葡萄</a></li>
+        </ul>
+    </li>
+    <li><a href="#">关于</a></li>
+
+</ul>
+    
 <div>
     <video src="1495426858521.mp4" controls></video>
     </div>
@@ -108,7 +152,7 @@
 <button class="btn btn-info">Button</button>
 <button class="btn btn-info  btn-block active">Button</button>
 <button class="btn btn-info  btn-block disabled">Button</button>
-<script type="text/javascript" src="jquery-1.6.2.min.js"></script>
+<script type="text/javascript" src="jquery.min.js"></script>
 <script type="text/javascript" src="bootstrap.min.js"></script>
 </body>
 </html>
