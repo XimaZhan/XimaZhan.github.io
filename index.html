@@ -11,9 +11,10 @@
         <link rel="apple-touch-icon" href="icon.png">
         <!-- Place favicon.ico in the root directory -->
 
-        <link rel="stylesheet" href="normalize.css">
-        <link rel="stylesheet" href="main.css">
+        <!--<link rel="stylesheet" href="css/normalize.css">-->
+        <!--<link rel="stylesheet" href="css/main.css">-->
         <link rel="stylesheet" href="bootstrap.css">
+        <!--<script src="bootstrap.min.js"></script>-->
     </head>
     <body>
         <!--[if lte IE 9]>
@@ -24,24 +25,45 @@
 
 
         <header role="banner">
-            <nav role="navigation" class="navbar navbar-static-top navbar-default">
-                <div class="container">
+
+            <nav class="navbar navbar-default" role="navigation">
+                <div class="container-fluid">
                     <div class="navbar-header">
-                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=" .navbar-collapse">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse"
+                                data-target="#example-navbar-collapse">
+                            <span class="sr-only">切换导航</span>
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span>
                         </button>
-                        <a class="navbar-brand" href="index.html">Project name</a>
+                        <a class="navbar-brand" href="#">菜鸟教程</a>
                     </div>
-                    <ul class="nav navbar-nav">
-                        <li class="active"><a href="index.html">Home</a></li>
-                        <li><a href="#">link</a></li>
-                        <li><a href="#">link</a></li>
-                    </ul>
+                    <div class="collapse navbar-collapse" id="example-navbar-collapse">
+                        <ul class="nav navbar-nav">
+                            <li class="active"><a href="#">iOS</a></li>
+                            <li><a href="#">SVN</a></li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                    Java <b class="caret"></b>
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">jmeter</a></li>
+                                    <li><a href="#">EJB</a></li>
+                                    <li><a href="#">Jasper Report</a></li>
+                                    <li class="divider"></li>
+                                    <li><a href="#">分离的链接</a></li>
+                                    <li class="divider"></li>
+                                    <li><a href="#">另一个分离的链接</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </nav>
         </header>
+        <main role="main">
+
+        </main>
         <script src="js/vendor/modernizr-3.6.0.min.js"></script>
         <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.3.1.min.js"><\/script>')</script>
